@@ -28,5 +28,13 @@ public class Talons_Example {
 
         // For Coupled Motors
         front_left.follow(front_right);
+
+        // Stopping
+        front_left.stopMotor();
+        front_right.stopMotor();
+
+        // Changing Directions
+        front_left.setInverted(!front_left.getInverted());
+        front_right.setInverted(!front_right.getInverted());
     }
 }
